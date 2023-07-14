@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-jinja2" %}
-{% set version = "0.39b0" %}
+{% set version = "0.40b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_jinja2-{{ version }}.tar.gz
-  sha256: 160416fd4e7b894b671faac7f70e53c1a401a1dafe858cf545fa2fe8a184df4a
+  sha256: c2b1ee8611b116e0e8564d32a919271333c523ae9ef69651135ac3a814e5549f
 
 build:
   noarch: python
@@ -22,13 +22,17 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.39b0
+    - opentelemetry-instrumentation ==0.40b0
     - wrapt <2.0.0,>=1.0.0
     # - opentelemetry-test-utils ==0.37b0
     # - opentelemetry-instrumentation-jinja2 
     # - markupsafe ==2.0.1
     # - jinja2 <4.0,>=2.7
     # - opentelemetry-test-utils ==0.39b0
+    # - opentelemetry-instrumentation-jinja2 
+    # - markupsafe ==2.0.1
+    # - jinja2 <4.0,>=2.7
+    # - opentelemetry-test-utils ==0.40b0
     # - opentelemetry-instrumentation-jinja2 
     # - markupsafe ==2.0.1
     # - jinja2 <4.0,>=2.7
